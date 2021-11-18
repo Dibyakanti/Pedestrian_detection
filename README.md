@@ -2,8 +2,10 @@
 
 This is an implementation of the HOG + SVM approach for pedestrian detection first done by Dalal & Triggs in their paper [Histograms of Oriented Gradients for Human Detection](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf) in 2005.
 
+In this approach, we parse a window of fixed size over the whole image, and for each window we get a fixed number of HOG features which are then passed to a SVM to classify if a person is present or not.
+
 ## Objectives :
-1. Get HOG features using opencv or skimage on images of size 64*128.
+1. Get HOG features using opencv or skimage on images of size 64x128.
 2. Detect pedestrians in the image using SVM.
 
 ## Dataset :
@@ -13,10 +15,10 @@ To create the positive samples we can used the annotation provided by them and n
 ## Training and Hyper-parameter tuning :
 We have tried 2 ways to detect pedetrians in the image.\
 (i) Load the pre-trained Linear SVM model from openCV.\
-(ii) Train a SVM with rbf kernel only on this dataset and see the results after NMS (Non-max suppression).
+(ii) Train a SVM with rbf kernel only on this dataset and see the results after NMS (Non-max suppression).\
 
-## Testing :
-
+The first approach involves using a `HoGDescriptor` from openCV whoce parameters can be set either using variables or using a .xml file. Here we have used the `hog.xml` file to set the parameters for the HOG.\
+We set the SVM detector for this by using `setSVMDetector()` and then passing the `HOGDescriptor_getDefaultPeopleDetector()` from opencv into it.
 
 ## Results : 
 
