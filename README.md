@@ -1,10 +1,10 @@
 # Pedestrian_detection_EE722_course_project
 
-This is an implementation of the HOG + SVM approach for pedestrian detection first done by Dalal & Triggs in their paper [Histograms of Oriented Gradients for Human Detection] (https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf) in 2005.\
+This is an implementation of the HOG + SVM approach for pedestrian detection first done by Dalal & Triggs in their paper [Histograms of Oriented Gradients for Human Detection] (https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf) in 2005. \
 
 ## Objectives :
-1. Get HOG features using opencv or skimage on images of size 64*128.\
-2. Detect pedestrians in the image using SVM.\
+1. Get HOG features using opencv or skimage on images of size 64*128. \
+2. Detect pedestrians in the image using SVM. \
 
 ## Dataset :
 [ETHZ] (https://data.vision.ee.ethz.ch/cvl/aess/dataset/).\
