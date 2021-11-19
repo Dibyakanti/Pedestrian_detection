@@ -18,7 +18,9 @@ We have tried 2 ways to detect pedetrians in the image.\
 (ii) Train a SVM with rbf kernel only on this dataset and see the results after NMS (Non-max suppression).
 
 The first approach involves using a `HoGDescriptor` from openCV whoce parameters can be set either using variables or using a .xml file. Here we have used the `hog.xml` file to set the parameters for the HOG.\
-We set the SVM detector for this by using `setSVMDetector()` and then passing the `HOGDescriptor_getDefaultPeopleDetector()` from opencv into it.
+We set the SVM detector for this by using `setSVMDetector()` and then passing the `HOGDescriptor_getDefaultPeopleDetector()` from opencv into it. We put a threshold on the weight so that trees are not detected as pedestrians, which is quite a common error for a pre-trained model.
+
+In the second approach since there are not many negative samples given in the datatset hence choosing random windows and labelling them negative does work but still it is tough for the model to differentiate between the pedestrians and the side-walk. Hence, we decided to stick with the Linear SVM pre-trained on INRIA dataset.
 
 ## Results : 
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/1.png">
