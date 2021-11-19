@@ -16,7 +16,6 @@ from PIL import Image
 import numpy as np
 import cv2
 
-
 def make_training_data(orientations = 9,pixels_per_cell = (8, 8),cells_per_block = (2, 2),threshold = .3,img_address="/content/drive/MyDrive/CV/seq03-img-left/*",annotation_address="./bahnhof-annot.idl"):
 	file1 = open(annotation_address,"r+") 
 	x = file1.read()
@@ -75,4 +74,4 @@ def make_training_data(orientations = 9,pixels_per_cell = (8, 8),cells_per_block
 	Y = np.asarray(target,dtype= np.float64)
 	X = np.reshape(X, (X.shape[0],X.shape[1]))
 
-  return X,Y
+	return X,Y
