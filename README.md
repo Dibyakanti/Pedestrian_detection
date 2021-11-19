@@ -22,13 +22,13 @@ We set the SVM detector for this by using `setSVMDetector()` and then passing th
 
 ## Results : 
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/1.png">
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/2.png">\
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/3.png">\
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/4.png">\
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/5.png">\
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/6.png">\
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/7.png">\
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/2.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/3.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/4.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/5.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/6.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/tree/main/results/7.png">
 
 
 
-# References :
+## References :
