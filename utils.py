@@ -16,13 +16,9 @@ from PIL import Image
 import numpy as np
 import cv2
 
-# orientations = 9
-# pixels_per_cell = (8, 8)
-# cells_per_block = (2, 2)
-# threshold = .3
 
 def make_training_data(orientations = 9,pixels_per_cell = (8, 8),cells_per_block = (2, 2),threshold = .3,img_address="/content/drive/MyDrive/CV/seq03-img-left/*",annotation_address="./bahnhof-annot.idl"):
-	file1 = open("./bahnhof-annot.idl","r+") 
+	file1 = open(annotation_address,"r+") 
 	x = file1.read()
 	ann = {}
 	for it in x.split(";"):
@@ -40,7 +36,7 @@ def make_training_data(orientations = 9,pixels_per_cell = (8, 8),cells_per_block
 	target = []
 
 	print("Computing positive HoG features")
-	for fname in glob.glob('/content/drive/MyDrive/CV/seq03-img-left/*'):
+	for fname in glob.glob(img_address):
 	    I = Image.open(fname)
 	    key = "left/"+fname.split("/")[-1]
 	    if(key in ann):
@@ -61,7 +57,7 @@ def make_training_data(orientations = 9,pixels_per_cell = (8, 8),cells_per_block
 	        target.append(1)
 
 	print("Computing negative HoG features")
-	for fname in glob.glob('/content/drive/MyDrive/CV/seq03-img-left/*'):
+	for fname in glob.glob(img_address):
 	    Is =cv2.imread(fname)
 	    I = Image.open(fname)
 	    sample2 = np.random.randint(0,Is.shape[0]-128,5)
