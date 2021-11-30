@@ -29,10 +29,16 @@ The blue rectangles represent the ones not selected by non-max supression.
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/2.png">
 
 This is an example when a non-human object gets chosen as a pedestrian.
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/3.png"><img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/4.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/3.png">
+<p float="left">
+  <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/4.png" width="100" />
+  <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/5.png" width="100" /> 
+  <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/6.png" width="100" />
+</p>
+<!-- <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/4.png">
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/5.png">
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/6.png">
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/7.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/7.png"> -->
 
 #### tSNE plot of the HOG features classified using the SVM classifier. (orange-1,blue-0)
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/tSNE-plot.png">
