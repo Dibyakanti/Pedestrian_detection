@@ -35,5 +35,5 @@ This is an example when a non-human object gets chosen as a pedestrian.
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/6.png">
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/7.png">
 
-#### tSNE plot of the HOG features classified using the SVM classifier.
+#### tSNE plot of the HOG features classified using the SVM classifier. (orange-1,blue-0)
 <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/tSNE-plot.png">
