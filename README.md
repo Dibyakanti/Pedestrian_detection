@@ -23,13 +23,13 @@ We set the SVM detector for this by using `setSVMDetector()` and then passing th
 In the second approach since there are not many negative samples given in the datatset hence choosing random windows and labelling them negative does work but still it is tough for the model to differentiate between the pedestrians and the side-walk. Hence, we decided to stick with the Linear SVM pre-trained on INRIA dataset. `HOG_SVM_train` conatins the notebook for training the SVM and testing.
 
 ## Results : 
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/1.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/1.png" width="500">
 
 The blue rectangles represent the ones not selected by non-max supression.
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/2.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/2.png" width="500">
 
 This is an example when a non-human object gets chosen as a pedestrian.
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/3.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/3.png" width="500">
 <p float="left">
   <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/4.png" width="400" />
   <img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/5.png" width="400" /> 
@@ -38,4 +38,4 @@ This is an example when a non-human object gets chosen as a pedestrian.
 </p>
 
 #### tSNE plot of the HOG features classified using the SVM classifier. (orange-1,blue-0)
-<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/tSNE-plot.png">
+<img src="https://github.com/Dibyakanti/Pedestrian_detection_EE722_course_project/blob/main/results/tSNE-plot.png" width="500">
